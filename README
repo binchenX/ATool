@@ -1,13 +1,17 @@
-binchen@m:~/d/n-main/frameworks$ mfind.rb Intent.java
+sudo cp afind.rb /usr/bin/afind
+
+binchen@m:~/d/n-main/frameworks$ afind Intent.java
 Finding where to build Intent.java
-Do mm in      : /framework/./base/Android.mk 
-The output jar: /system/framework/framework.jar"
-binchen@m:~/d/n-main/frameworks$ mfind.rb CameraService.java
+Android.mk  : /framework/base/Android.mk 
+Jar         : /system/framework/framework.jar"
+
+binchen@m:~/d/n-main/frameworks$ afind CameraService.java
 Finding where to build CameraService.java
-Do mm in      : /framework/./base/services/Android.mk 
-The output jar: /system/framework/services.jar"
-binchen@m:~/d/n-main/frameworks$ mfind.rb UsbManager.java
+Android.mk  : /framework/base/services/Android.mk 
+Jar         : /system/framework/services.jar"
+binchen@m:~/d/n-main/frameworks$ afind UsbManager.java
+
 Finding where to build UsbManager.java
-Do mm in      : /framework/./base/libs/usb/Android.mk 
-The output jar: /system/framework/com.android.future.usb.accessory.jar"
+Android.mk  : /framework/base/libs/usb/Android.mk 
+Jar         : /system/framework/com.android.future.usb.accessory.jar"
 

@@ -65,6 +65,6 @@ t.split("\n").select { |e|
 }
 
 puts <<OUTPUTT
-Do mm in      : /framework/#{targetMk} 
-The output jar: /system/framework/#{module_name}.jar"
+Android.mk  : /framework/#{targetMk[2..-1]} 
+Jar         : /system/framework/#{module_name}.jar"
 OUTPUTT
