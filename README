@@ -1,0 +1,13 @@
+binchen@m:~/d/n-main/frameworks$ mfind.rb Intent.java
+Finding where to build Intent.java
+Do mm in      : /framework/./base/Android.mk 
+The output jar: /system/framework/framework.jar"
+binchen@m:~/d/n-main/frameworks$ mfind.rb CameraService.java
+Finding where to build CameraService.java
+Do mm in      : /framework/./base/services/Android.mk 
+The output jar: /system/framework/services.jar"
+binchen@m:~/d/n-main/frameworks$ mfind.rb UsbManager.java
+Finding where to build UsbManager.java
+Do mm in      : /framework/./base/libs/usb/Android.mk 
+The output jar: /system/framework/com.android.future.usb.accessory.jar"
+
