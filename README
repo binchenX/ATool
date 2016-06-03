@@ -1,17 +1,24 @@
+
+1. install
 sudo cp afind.rb /usr/bin/afind
 
-binchen@m:~/d/n-main/frameworks$ afind Intent.java
-Finding where to build Intent.java
-Android.mk  : /framework/base/Android.mk 
-Jar         : /system/framework/framework.jar"
+2. usage
 
-binchen@m:~/d/n-main/frameworks$ afind CameraService.java
-Finding where to build CameraService.java
-Android.mk  : /framework/base/services/Android.mk 
-Jar         : /system/framework/services.jar"
-binchen@m:~/d/n-main/frameworks$ afind UsbManager.java
+afind tells you 
+1) where to build a file
+2) what and where to push to the device
 
-Finding where to build UsbManager.java
-Android.mk  : /framework/base/libs/usb/Android.mk 
-Jar         : /system/framework/com.android.future.usb.accessory.jar"
+afind is dexopt-aware and help you not pushing the wrong file!
+
+$ afind Intent.java
+Android.mk  : /framework/base/Android.mk
+Jar         : /system/framework/arm64/boot-framework.oat/.art
+
+$ afind CameraService.java
+Android.mk  : /framework/base/services/Android.mk
+Jar         : /system/framework/oat/arm64/services.odex (dexopt is on)
+
+$ afind TvRemoteProvider.java
+Android.mk  : /framework/base/media/lib/tvremote/Android.mk
+Jar         : /system/framework/com.android.media.tv.remoteprovider.jar
 
